@@ -1,0 +1,290 @@
+/* .container{
+    margin-top: 400px;
+}
+.car{
+    animation: move 5s linear infinite;
+}
+.car_body{
+    height: 60px;
+    width: 200px;
+    background-color: green;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 30px;
+    border: 2px solid black;
+    
+}
+
+.road{
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    transform: skewX(120deg);
+    position: relative;
+    top: -45px;
+}
+.wheel1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 30px;
+    position: relative;
+    top: -9px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.wheel2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 130px;
+    position: relative;
+    top: -40px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+@keyframes move {
+    0%{
+       transform: translateX(10%); 
+    }
+    25%{
+        transform: translateX(25%); 
+     }
+     50%{
+        transform: translateX(50%); 
+     }
+     75%{
+        transform: translateX(75%); 
+     }
+     100%{
+        transform: translateX(100%); 
+     }
+}
+
+.zebra-cross{
+    height: 30px;
+    width: 60px;
+    background-color:gray;
+    position: relative;
+    top: -75px;
+    left: 1000px;
+}
+
+.light{
+    width: 50px;
+    height: 100px;
+    background-color: black;
+    position:relative ;
+    top: -300px;
+    float: right;
+}
+.green{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: green;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+.red{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: 15px;
+    left: 10px;
+} */
+ body{
+    top: 0;
+    left: 0;
+ }
+.container {
+    margin-top: 300px;
+    position: relative;
+    width: 100%;
+}
+
+.car {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 2s linear;
+}
+
+.car_body {
+    height: 60px;
+    width: 200px;
+    background-color: green;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 30px;
+    border: 2px solid black;
+}
+
+.road {
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: 80px;
+}
+
+.wheel1, .wheel2 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: green;
+    position: relative;
+    border: 1px solid black;
+    animation: rotate 0.5s linear infinite;
+}
+@keyframes rotate {
+    0%{
+       transform:rotate(0deg); 
+    }
+    25%{
+        transform: rotate(90deg); 
+     }
+     50%{
+        transform: rotate(180deg); 
+     }
+     75%{
+        transform: rotate(270deg); 
+     }
+     100%{
+        transform: rotate(360deg); 
+     }
+}
+
+.wheel1 {
+    margin-left: 30px;
+    top: -9px;
+}
+
+.wheel2 {
+    margin-left: 130px;
+    top: -40px;
+}
+
+.zebra-cross {
+    height: 30px;
+    width: 60px;
+    background-color: gray;
+    position: absolute;
+    top: 80px;
+    left: 1000px; /* Adjust this position as needed */
+}
+
+.light {
+    width: 70px;
+    height: 120px;
+    background-color: black;
+    position: absolute;
+    border-radius: 20px;
+    top: -300px;
+    left: 1400px; /* Adjust this position as needed */
+    
+}
+
+.green, .red {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+}
+
+.green {
+    top: 10px;
+    background-color: green;
+
+}
+
+.red {
+    top: 60px;
+    background-color: gray;
+}
+
+.stop {
+    background-color: red;
+}
+.redbtn{
+    padding: 10px;
+    width: 60px;
+    border: none;
+    background-color: red;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+.greenbtn{
+    padding: 10px;
+    width: 60px;
+    border: none;
+    background-color: green;
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+.redbtn:hover,.greenbtn:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.button{
+    position: absolute;
+    top: 150px;
+    left: 700px;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+.message{
+    display: flex;
+    background-color: aquamarine;
+    height: 50px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    margin-left: 610px;
+    border-radius: 30px;
+    justify-content: center;
+    font-size: 1.5em;
+    color: brown;
+    font-weight: bolder;
+    transition: 0.5s ease-in-out;
+}
+.count{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -350px;
+    left: 1395px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    position: relative;
+}
+.name{
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    font-size: 50px;
+    font-weight: 1000;
+    background-image: url('./flame.gif');
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
