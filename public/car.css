@@ -288,3 +288,11 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
 }
+.bar{
+    position: fixed;
+    height: 300px;
+    width: 20px;
+    background-color: black;
+    top: 220px;
+    left: 1430px;
+}

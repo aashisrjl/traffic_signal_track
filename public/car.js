@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const greenBtn = document.querySelector('.greenbtn');
     let msg = document.querySelector('.message')
     let count = document.querySelector('.Count')
-   count.textContent = 5
+    count.textContent = 5
     setInterval(()=>{
         count.textContent--
         if(count.textContent <= 0){
@@ -103,7 +103,7 @@ container.addEventListener('click', () => {
             // setTimeout(()=>{
             //     msg.textContent = "welcome !"
             //     },1000)
-            car.style.left = `${carPosition + 100}px`;
+            car.style.left = `${carPosition + 300}px`;
 
             if (carPosition + carWidth > zebraCrossPosition) {
                 carCrossedZebra = true;
